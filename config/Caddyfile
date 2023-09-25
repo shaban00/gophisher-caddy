@@ -1,0 +1,15 @@
+(common) {
+	header / {
+		-Server
+	}
+}
+
+example.com {
+	import common
+
+	reverse_proxy /* http://gophish:3000 {
+		header_up X-Real-IP {remote}
+		header_up X-Forwarded-Proto {schema}
+		header_up X-Forwarded-Host {host}
+	}
+}
