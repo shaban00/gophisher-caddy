@@ -7,7 +7,7 @@
 gophisher.hopto.org {
 	import common
 
-	reverse_proxy /* http://gophish:3000 {
+	reverse_proxy /* http://gophish:3333 {
 		header_up X-Real-IP {remote}
 		header_up X-Forwarded-Proto {schema}
 		header_up X-Forwarded-Host {host}
