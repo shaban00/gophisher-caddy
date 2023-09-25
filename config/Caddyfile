@@ -4,7 +4,7 @@
 	}
 }
 
-example.com {
+gophisher.hopto.org {
 	import common
 
 	reverse_proxy /* http://gophish:3000 {
