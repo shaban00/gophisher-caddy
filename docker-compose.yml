@@ -6,6 +6,7 @@ services:
     ports:
       - "3333:3333"  # Change this port if needed
       - "80:80"      # HTTP web interface
+    restart: unless-stopped
     environment:
       - GOPHISH_SSL=false  # Set to true if you want to use HTTPS
     volumes:
@@ -17,6 +18,7 @@ services:
     ports:
       - "443:443"  # HTTPS
       - "80:80"    # HTTP
+    
     volumes:
       - ./config/Caddyfile:/etc/caddy/Caddyfile  # Mount your Caddyfile for configuration
       - caddy_data:/data
